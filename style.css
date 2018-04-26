@@ -17,6 +17,10 @@ html{
   min-width: 900px;
   
 }
+
+section{
+  margin-bottom: 10px;
+}
 /* Everything regarding Header */
 
 h1{
@@ -55,7 +59,7 @@ canvas{
 
 .intro{
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap : wrap;
@@ -99,11 +103,12 @@ canvas{
 }
 
 .gallery-container{
- width: 80%;
+ width: 90%;
  display: flex;
  flex-wrap: wrap;
- flex-direction: column;
- justify-content: flex-start;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
  /*background-color: silver;*/
 }
 .gallery-row{
@@ -112,32 +117,72 @@ canvas{
   flex-direction: row;
   flex-wrap: wrap;
   /*background-color: blue;*/
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .gallery-row .title {
   margin-top: 50px;
   margin-bottom: 40px;
-  font-size: 1.5em
+  font-size: 2em
+}
+
+.gallery-column{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 1000px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  /*background-color: blue;*/
+  justify-content: space-evenly;
 }
 
 .gallery-item{
-  background: #f8f8f8;
-   box-shadow: 2px 2px 5px #000004;
   width: 30%;
-  min-width: 250px;
-  padding: 10px;
+  max-width: 320px;
+  min-width: 200px;
   position: relative;
+  margin-bottom: 24px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.overlay{
+  background-color: rgba(0,0,0,0);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius:5%;
+}
+.overlay:hover{
+  background-color: rgba(0,0,0,.5);
+  opacity: 1;
+  transition: ease-in-out 1s;
+}
+
+.gallery-text{
+  opacity: 0;
+  width: 100%;
+
+  transition: ease-in-out 2s;
+  
+}
+
+.gallery-text:hover{
+  opacity: 1;
+  transition: ease-in-out 2s;
 }
 
 .item-date{
-  width: 90%;
+  color: white;
   text-align: right;
   margin-bottom: 24px;
   position: absolute;
-  top: 10;
-  right: 100;
+  top: 10px;
   font-size: 12px;
+  right: 5px;
 }
 
 .item-title{
@@ -145,16 +190,28 @@ canvas{
   font-size: 18px;
   margin-bottom: 12px;
   margin-top: 24px;
+  position: absolute;
+  top: 20%;
+  color: white;
+  padding: 5px;
 }
 
 .item-desc{
   text-align: left;
   margin-bottom: 12px;
   font-size: 14px;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 img{
   width: 100%;
+  background-size: cover;
+  border-radius: 5%;
+  box-shadow: 0px 2px 5px #292e31;
 }
 
 
