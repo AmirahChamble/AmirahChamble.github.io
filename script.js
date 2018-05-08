@@ -53,5 +53,13 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  var screenwidth;
+  
+  if( screenwidth >= 900){
+    resizeCanvas(windowWidth, windowHeight);
+  }else{
+    screenwidth = 900;
+    resizeCancas(screenwidth, windowHeight);
+  }
+  
 }
