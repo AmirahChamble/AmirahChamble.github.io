@@ -1,0 +1,80 @@
+
+/**** CV container left side ******/
+
+.cv-content-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+
+
+.aside{
+    width: 30%;
+    text-align: left;
+    padding: 12px;
+}
+
+.education-info{
+    margin-bottom: 26px;
+}
+.education-info h1{
+    font-size: 18pt;
+}
+
+.my-education{
+    margin-top: 12px;
+    font-size: 12pt;
+    color: #fff;
+}
+
+i{
+    font-size: 12pt;
+    color: #fff;
+}
+
+.my-education a{    
+    text-decoration: none;
+    color: #fff;
+}
+
+.my-education p{
+    margin-bottom: 6px;
+}
+.my-education h3{
+    font-size: 14pt;
+    margin-bottom: 6px;
+}
+.education-cred{
+    font-size: 12pt;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/******* CV container right side ***********/
+
+.main-content{
+    width: 70%;
+    border-left: 2px solid #fff;
+    text-align: left;
+}
+
+.job-container{
+    margin-top: 26px;
+    margin-bottom: 26px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap : nowrap;
+}
+.job-info{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}

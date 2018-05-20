@@ -4,210 +4,297 @@
   <title>Amirah Chamble</title>
   <link rel="shortcut icon" type="image/png" href="bluebird-favicon.png"/>
     <!---My CSS Stylesheet--->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Font Awesome Library Link-->  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!--P5Js Library Link--->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
-    <!-- My P5JS Script file -->
-    <script src="script.js"></script>
+   
 </head>
 <body>
-  <section class="intro">
     
-    <div class="intro-content">
-      <div class="title">
-        <h1>Hi, I'm Amirah Chamble.</h1>
+<!------------------ Navigation Tabs---------------------------------------------------->
+
+  <nav class="sticky">
+    
+    <div>
+      <a href="/index.html">
+      <div class="home-tab">
+        <h4> Amirah Chamble </h4>
+      </div>
+      <div class="home-tab-background">
+      </div>
+      </a>
+    </div>
+    
+    <div class="nav-column">
+      <!--<p> tags in <div> nav-tabs classes will be links--->
+      <div>
+        <a href="#">
+        <div class="nav-tabs"> 
+          <p>  About </p> 
+       </div>
+        <div class="nav-tabs-background">
+        </div>
+        </a>
       </div>
       
-      <div class="description">
-        <span> 
-          <h3>
-            UX Designer | Technical Artist | Game Dev
-          </h3>
-        </span>
-        
+      <div>
+        <a href="/cv.html">
+        <div class="nav-tabs "> 
+          <p>  CV </p> 
+       </div>
+        <div class="nav-tabs-background nav-tabs2">
+        </div>
+        </a>
       </div>
       
-      <div class="scroll-bounce">
+      <div>
+        <a href="#">
+        <div class="nav-tabs "> 
+          <p>  Gallery </p> 
+       </div>
+        <div class="nav-tabs-background nav-tabs3">
+        </div>
+        </a>
+      </div>
+      
+      
+    </div>
+    
+  </nav>
+  
+<!---------------- End of Navigation Tabs ----------------------------------------------------->
+
+
+  
+<!--------------------- End of Header Container ------------------------------------------------>
+
+  <div class="main-container">
+    
+    <section class="header banner-top parallax ">
+      
+        <div class="header-text">
+         <h1> Amirah Chamble </h1>
+         <h3> UX Designer | Techinical Artist | Game Dev</h3>
+        </div>
+      
+        <!--- Scroll Down Indicator ---->
+       <div class="scroll-down-indicator">
           <i class="fas fa-chevron-down"></i>
-      </div>
-    </div>
+        </div>
+      
+    </section>
+
+<!--------------------- End of Header Container ------------------------------------------------>
+   
+   
     
-    <div id="canvas"></div> 
-  </section>
-  
-  
-  
-  
-  
-  
-  <!--- Main Recent Projects Section ---->
-  <section class="main-recent">
-    <div class="gallery-container">
-      <div class="gallery-row" >
-        
-        <h4 class="title"> Recent Work</h4>
-        
-      </div>
-      <div class="gallery-row">
-      <div class="gallery-column">
-        
-         
-         <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Fur Balls </p>
-                 <p class="item-desc"> 3D Models of Pom-Pom Faux Fur Key Chains. Made using Blender 3D. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/24fef452603943.5915c95a033bc.png" alt ="Fur Balls">
-         </div>
-         
-         <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Fish Print </p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ca31eb52574053.5915091e34c69.png" alt ="Fish Print">
-         </div>
-         
-         <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Fall Print </p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/7d827b52574053.5915091e348cf.png" alt ="Fall Print">
-         </div>
-         
-      </div>
+<!--------------------- Page Content Container ------------------------------------------------>
+
+    <div class="content-container">
       
-       <div class="gallery-column">
-    
-         
-         <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Ameoba </p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/67070052574053.5915091e337c8.png" alt ="Ameoba Print">
-         </div>
-        
-        <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Octopus and Snail</p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/3452e352574053.5915091e34068.png" alt ="Octopus and Snail Print">
-         </div>
-         
-         <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Flower </p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2e790952574053.5915091e33b6e.png" alt ="Flower Print">
-         </div>
-         
-      </div>
-      
-       <div class="gallery-column">
-         
-          <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Hummingbirds 2 </p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/38349a45925379.5841798a18c39.png" alt ="Hummingbirds Print">
-         </div>
-         
-         <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Water </p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/5f6a7b52574053.5915091e3454b.png" alt ="Water Print">
-         </div>
-         
-         
-         <div class="gallery-item">
-           <div class="gallery-text overlay">
-             <p class="item-date"> Spring 2017 </p>
-                 <p class="item-title"> Untitled-9 </p>
-                 <p class="item-desc"> Made Using Processing JS. </p>
-           </div>
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/99991b52574053.5915091e3510a.png" alt ="Untitled-9 Print">
-         </div>
-        
-        
-         
-         
-      </div>
-      </div>
-      
-      
-    </div>
-  </section>
-  
-  
-  
-  
-  
-  <!--- Main Footer Section -->
-  <section>
-    <div class="footer-strip">
-      <div class="flex-container-center main-containers">
-          <div >
-            <h3 class="footer-social-links"> Find me on</h3>
-            <span class="social-media-icons">
-<a href="https://www.linkedin.com/in/amirah-chamble-211769115">
-         <i class="fab fa-linkedin"></i>
-          </a>
+        <!-- Recent Work Section -->
+        <section class="recent-work-column">
           
-          <a href="https://www.behance.net/amirahcham77c4">
-          <i class="fab fa-behance"></i>
-          </a>
-          
-          <a href="https://amirahchamble.deviantart.com/">
-          <i class="fab fa-deviantart"></i>
-          </a>
-          
-          <a href="https://codepen.io/AmirahChamble/">
-          <i class="fab fa-codepen"></i>
-          </a>
-          
-          <a href="https://amirahchamble.tumblr.com/">
-          <i class="fab fa-tumblr"></i>
-          </a>   
-          
-          <a href="https://twitter.com/achamble">
-          <i class="fab fa-twitter"></i>
-          </a>
-               
-          <a href="https://github.com/AmirahChamble">
-          <i class="fab fa-github"></i>
-          </a>
-          
-            </span>
+          <div class="recent-work-info-row">
+            
+            <div class="recent-work-description">
+              <h1> Recent Work</h1>
+              <p> From my most recent Case Studies, to Illustrations, Blender Animations, and GIFs.</p>
+            </div>
+            
+            <div>
+              <a href="#">
+              <div class="gallery-button-dropdown">
+              </div>
+              <div id="visit-gallery-button">
+                <h1>
+                  Visit Gallery
+                </h1>
+              </div>
+              </a>
+            </div>
+            
           </div>
-        </div>  
-      </div>
+          
+          <div class="grid-container">
+            
+            <div class="img1 grid gridR">
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            <div class="img2 grid gridR gridL"> 
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            <div class="img3 grid item3 gridL"> 
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            <div class="img4 grid item4 gridR gridT"> 
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            <div class="img5 grid item5 gridL gridT gridR"> 
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            <div class="img6 gridR grid gridL gridT"> 
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            <div class="img7 gridL grid gridT"> 
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            <div class="img8 item8 grid gridL gridT"> 
+              <a href="#">
+              <div class="grid-text">
+                <div class="grid-date">
+                  Summer 2018 
+                </div>
+                <div class="grid-info">
+                  <h1> Awesome Prints </h1>
+                  <p> An awesome collections of awesome prints by Amirah, the creator of awesome prints.</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+            
+          </div>
+        </section>
+      
+    </div>
+    
+  </div>
+  
+ <!------------------------ End of Page Content -----------------------------------------------------------> 
+  
+  
+<!--------------------------- Footer Section ---------------------------------------------------------------> 
+
+<footer class="parallax img-footer">
+<div class="footer-strip ">
+  <div class="flex-container-center main-containers">
+    <div class="footer-social-links">
+      <h3> Find me on</h3>
+      <span class="social-media-icons">
+          
+        <a href="#"> 
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        
+        <a href="#"> 
+            <i class="fab fa-twitter"></i>
+        </a>
+        
+        <a href="#">
+             <i class="fab fa-instagram"></i>
+        </a>
+        
+        <a href="#">
+            <i class="fab fa-dribbble"></i>
+        </a>
+        
+        <a href="#"> 
+            <i class="fab fa-behance"></i>
+        </a>
+        
+        <a href="#"> 
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-deviantart"></i>
+         </a>
+        
+        
+      </span>
+    </div>
+  </div>  
+ 
+</div>
 
 <!----Copyright and Signature Section----->
   
-    <div class="signature-strip">
-      <span class="signature"> Powered by Amirah Chamble </span>
-      <span class="copyright"> &copy; Amirah Chamble 2018 </span>
-    </div>
-    
-  </section>
-  
+<div class="signature-strip ">
+  <span class="signature">Designed, Developed, and Powered by Amirah Chamble </span>
+  <span class="copyright"> &copy; Amirah Chamble 2018 </span>
+</div>
+</footer>
+
+<!---------------------- End of Footer Section -------------------------------------------------------------->  
   
 </body>
 
