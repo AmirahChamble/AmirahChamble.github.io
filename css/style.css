@@ -17,13 +17,14 @@ a{
   cursor : pointer;
 }
 
+html{  background-color: #212121;
+}
 body{ 
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  background-color: #212121;
 }
 
 .main-container{
@@ -35,6 +36,7 @@ body{
   justify-content: center;;
   text-align: center;
   color: white;
+  position: relative;
 }
 .content-container{
   display: flex;
@@ -154,7 +156,6 @@ All of the header Css
 .header{
   width: 100vw;
   height: 90vh;
-  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800/67070052574053.5915091e337c8.png");
 }
 
 .banner-top{
@@ -325,6 +326,11 @@ CSS for CSS Grid Dislplay
 /*----------------
 CSS Grid Container Content
 -------------------*/
+.img-header{
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800/67070052574053.5915091e337c8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .img1{
   background: url('https://mir-s3-cdn-cf.behance.net/project_modules/2800/24fef452603943.5915c95a033bc.png');
 background-repeat: no-repeat;
