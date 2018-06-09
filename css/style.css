@@ -34,7 +34,6 @@ body{
   flex-direction: column;
   justify-content: center;;
   text-align: center;
-  background-color: #212121;
   color: white;
 }
 .content-container{
@@ -154,7 +153,7 @@ All of the header Css
 *************/
 .header{
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800/67070052574053.5915091e337c8.png");
 }
 
