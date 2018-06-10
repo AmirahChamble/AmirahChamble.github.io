@@ -10,6 +10,6 @@ particles = Particles.init({
   speed: .2
 });
 
-/** *^^^^^ this requires the following javascript library to work: 
+/** *^^^^^ this requires the following javascript library to work:
 https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.js
 */

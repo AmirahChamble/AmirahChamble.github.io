@@ -1,7 +1,7 @@
 /*css for all canvas elements will go here */
 canvas{
-    top : 0; 
-left : 0; 
+    top : 0;
+left : 0;
 position: absolute;;
 z-index : -1;
 width: 100vw;
@@ -10,5 +10,7 @@ height: 100vh;
 
 .img-particle-js{
    background: none;
+   position: absolute;
+   z-index: 0;
 
 }
