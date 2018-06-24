@@ -50,10 +50,11 @@ a{
 html{
   font-family: @sans-serif;
   height: 100vh;
+  width: 100vw;
   background-color: @background;
 }
 body{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -65,11 +66,10 @@ footer{}
 /********************
     Canvas
 *********************/
-.particlejs{
+#particlejs{
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  z-index: -1;
-  height: 100%;
-
 }
 
 /*******Nav*******
@@ -155,12 +155,12 @@ Main Content CSS
 .main-section{
   width: 100%;
   margin-top: @largeGap;
-  margin-left: 250px;
-  margin-right: @mediumGap;
+  margin-left: 300px;
+  margin-right: @smallGap;
   margin-bottom: @largeGap;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 /**** Tagline Section ****/
@@ -217,7 +217,7 @@ Main Content CSS
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .item{
@@ -307,7 +307,7 @@ img{
 }
 
 .item-backdrop3d{
-  width: 340px;
+  width: 330px;
   height: 360px;
 }
 
