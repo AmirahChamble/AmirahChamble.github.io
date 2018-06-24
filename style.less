@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Pacifico');
+/***** Chosen Font Families*******
+font-family: 'Pacifico', cursive;
+font-family: 'Libre Franklin', sans-serif;
+*************/
+
+*{
+  margin: 0px;
+}
+/******* CSS Variables****
+*************************/
+/**** Colors ***/
+@background : #fff;
+@black : #292e31;
+@white: #fff;
+@title-color : #0b12e1;
+@main-color: #d523c6;
+
+@sandwisp: #f3f6b4;
+@fountain-blue: #57b9c6;
+@govenor-bay: #3c34d2;
+@beeswax : #fdf3bf;
+@dairy-creme: #fbddc5;
+@cerise: #d523c6;
+/** Spacing***/
+@tinyGap : 6px;
+@smallGap : 12px;
+@mediumGap: 26px;
+@largeGap: 50px;
+
+/**** Font families and sizing ****/
+@sans-serif : 'Libre Franklin', sans-serif;
+@serif : 'Pacifico', cursive;
+
+@caption: 8pt;
+@paragraph: 12pt;
+@body :  14pt;
+@title:  20pt;
+@header:  28pt;
+@page-title: 30pt;
+@gigantic-title: 40pt;
+
+/*******General*******
+*********************/
+a{
+  color: @black;
+  text-decoration: none;
+}
+
+html{
+  font-family: @sans-serif;
+  height: 100vh;
+  background-color: @background;
+}
+body{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+
+}
+
+footer{}
+/********************
+    Canvas
+*********************/
+.particlejs{
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+
+}
+
+/*******Nav*******
+*********************/
+nav{
+  width: 15vw;
+  min-width: 200px;
+  height: 100%;
+  /*border-right: 1px solid coral;*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: @smallGap;
+  margin-right: @smallGap;
+  align-text: left;
+  position: fixed;
+  clear: both;
+}
+
+.nav-page-links {
+  padding-top: @largeGap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap : nowrap;
+  justify-content: flex-start;
+}
+
+.nav-page-links a {
+  margin-bottom: @mediumGap;
+  padding-left: @smallGap;
+  border-left: 2px solid  @main-color;
+  -webkit-transition: 1s ease-in-out;
+}
+
+.nav-page-links a:hover{
+  border-left: @largeGap solid  @main-color;
+  -webkit-transition: 1s ease-in-out;
+}
+
+
+
+#home-link{
+  width: 100%;
+  text-align: left;
+  font-family: @serif;
+  font-size: @title;
+  color: @main-color;
+  border: none;
+  margin-bottom: @largeGap;
+}
+
+.nav-social-links{
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: @largeGap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: @body;
+}
+
+.nav-social-links p{
+  font-size: @caption;
+  margin-bottom: @smallGap;
+}
+
+.social-nav-links-icons a {
+  padding: 0px @tinyGap 0px @tinyGap;
+  -webkit-transition: 1s ease-in-out;
+}
+
+.social-nav-links-icons a:hover {
+  color: @main-color;
+  -webkit-transition: 1s ease-in-out;
+}
+
+/***********************************
+Main Content CSS
+************************************/
+.main-section{
+  width: 100%;
+  margin-top: @largeGap;
+  margin-left: 250px;
+  margin-right: @mediumGap;
+  margin-bottom: @largeGap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/**** Tagline Section ****/
+
+.tagline{
+  margin-top: @largeGap*4;
+  margin-bottom: @largeGap*2;
+  width: 100%;
+}
+
+.tagline h1{
+  font-family: @serif;
+  font-size: @gigantic-title;
+  color: @main-color;
+}
+
+.tagline h2{
+  margin-top: @largeGap;
+  font-size: @title;
+  margin-bottom: @smallGap;
+}
+
+.tagline p {
+  font-size: @body;
+}
+
+/***** Works Section******/
+
+.section-header{
+  margin-top: @largeGap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: @largeGap;
+}
+.section-header h1{
+  font-size: @title;
+  width: 90px;
+  padding-bottom:4px;
+  border-bottom: 3px solid @main-color;
+}
+.section-header p{
+  margin-top:@smallGap;
+  font-size: @paragraph;
+  font-style: italic;
+}
+
+/**********************
+    Items Section [Case Study]
+***********************/
+
+.item-section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item{
+  margin: @largeGap;
+  margin-right: @largeGap*2;
+}
+
+.item2{
+  margin-top:@largeGap*2;
+}
+
+.item-backdrop{
+  width: 300px;
+  height: 360px;
+}
+
+.fig-cap{
+    transform: translate(-50px, 40px);
+}
+
+img{
+  width: 300px;
+  height: 200px ;
+  background-size: cover;
+  background-repeat: norepeat;
+  box-shadow: 10px 10px 0px ;
+}
+
+.item-cap{
+  transform: translate(50px);
+  padding-top: @mediumGap;
+  padding-left: @smallGap;
+}
+
+.item-title{
+  font-size: @title;
+}
+
+.item-company{
+  font-size: @body;
+}
+/*** Backdrops *****/
+.backdrop1{
+  background: @fountain-blue;
+  color: @sandwisp;
+}
+.backdrop1-3d{
+  border: 2px solid @fountain-blue;
+  color: @fountain-blue;
+}
+.backdrop2{
+  background: @dairy-creme;
+  color: @white;
+}
+
+.backdrop3{
+  background: @dairy-creme;
+  color: @cerise;
+}
+.backdrop3-3d{
+  border: 2px solid @cerise;
+  color: @cerise;
+}
+.backdrop4{
+  background: @sandwisp;
+  color: @fountain-blue;
+}
+.backdrop4-3d{
+  background: @fountain-blue;
+  color: @white;
+}
+.backdrop5{
+  background: @fountain-blue;
+  color: @dairy-creme;
+}
+
+.backdrop5-3d{
+  border: 2px solid @fountain-blue;
+  color: @fountain-blue;
+}
+
+/**********************
+    Items Section [3D Work]
+***********************/
+.item3d{
+  margin:  0px @largeGap @largeGap 0px;
+}
+
+.item-backdrop3d{
+  width: 340px;
+  height: 360px;
+}
+
+.fig-cap3d{
+    transform: translate(80px, 40px);
+}
+
+img{
+  width: 300px;
+  height: 200px ;
+  background-size: cover;
+  background-repeat: norepeat;
+  box-shadow: 10px 10px 0px ;
+}
+
+.fig-cap3d .item-cap{
+  transform: translate(-50px);
+  padding-top: @mediumGap;
+  padding-left: @smallGap;
+}
+
+.item-title{
+  font-size: @title;
+}
+
+.item-company{
+  font-size: @body;
+}
+
+/************************
+      About Section
+**********************/
+
+.about-text{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-text p{
+  margin-bottom: @mediumGap;
+   padding-left: @mediumGap;
+  line-height: 24px;
+  font-size: @paragraph;
+}
+
+.about-text p a {
+  color: @main-color;
+}
