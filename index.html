@@ -11,12 +11,11 @@
     <!-- For Less CSS CDN  and my Stylesheet-->
     <link rel="stylesheet/less" type="text/css" href="style.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
-    <!-- Particle.js CDN Link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.js"></script>
-    <!--- JQuery CDN -->
+  <!--- JQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- My Javascript Files -->
     <script src="particlejs.js"></script>
+    <script src="jquery.js"></script>
 </head>
 
 
@@ -26,7 +25,12 @@
 
 <body>
   <!-- Nav Begins ----->
-    <canvas id="particlejs"></canvas>
+  <div class="canvas-container">
+    <canvas class="particles-js"></canvas>
+  </div>
+    <!-- Particle.js CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
 
   <nav>
     <div class="nav-page-links">
