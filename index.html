@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
     <!-- My P5JS Script file -->
     <!-- For Less CSS CDN  and my Stylesheet-->
-    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <link rel="stylesheet/less" type="text/css" href="style.less?ts=<?=filemtime('style.css')?>" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
   <!--- JQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -35,7 +35,7 @@
   <nav>
     <div class="nav-page-links">
 
-      <a id="home-link" data-value="home" href="#"> Amirah Chamble </a>
+      <a id="home-link" data-value="home" href="index.html"> Amirah Chamble </a>
 
       <a data-value="case-studies" href="#"> Case Studies </a>
       <a data-value="3d-work" href="#"> 3D Work</a>
@@ -63,20 +63,23 @@
   <!--- Main Section Begins ---->
   <section class="main-section">
      <!---Tagline Sections --->
-    <div id="home" class="tagline">
-      <h1> Hi There. <h1/>
+    <div id="home" class="tagline margin-top">
+      <h1> Hi There. </h1>
       <h2> I'm Amirah Chamble.</h1>
       <p> I'm a UX Designer and 3D Artist based in Washington DC.</p>
     </div>
-     <!--- Section Header --->
+     <!--- Section Header -->
     <div id="case-studies" class="section-header">
       <h1> Case Studies </h1>
-      <p> Projects I've Recently Worked On</p>
+      <p> UX Projects I've Recently Worked On</p>
+
     </div>
 
-     <!--- Case Study Section --->
+    <h2 class="coming">  Coming Soon ... </h2>
+
+     <!--- Case Study Section --
     <div class="item-section">
-       <!--- Case Study 1 --->
+       <!--- Case Study 1 --
       <div class="item3d">
         <a href="#">
           <div class="item-backdrop3d backdrop1-3d">
@@ -90,7 +93,7 @@
         </div>
         </a>
       </div>
-       <!--- Case Study 2 --->
+       <!--- Case Study 2 ---
       <div class="item ">
         <a href="#">
           <div class="item-backdrop3d backdrop2">
@@ -104,7 +107,7 @@
         </div>
         </a>
       </div>
-       <!--- Case Study 3 --->
+       <!--- Case Study 3 ---
        <div class="item3d">
         <a href="#">
           <div class="item-backdrop3d backdrop3-3d">
@@ -118,7 +121,7 @@
         </div>
         </a>
       </div>
-       <!--- Case Study 4 --->
+       <!--- Case Study 4 ---
        <div class="item ">
         <a href="#">
           <div class="item-backdrop3d backdrop4-3d">
@@ -132,7 +135,7 @@
         </div>
         </a>
       </div>
-       <!--- Case Study 5 --->
+       <!--- Case Study 5 ---
        <div class="item3d">
         <a href="#">
           <div class="item-backdrop backdrop5-3d">
@@ -158,48 +161,97 @@
 
     <!--- 3D Work Section --->
     <div class="item-section">
-       <!--- 3d work 1 --->
+
+      <!--- Warm Winter Landscape --->
+     <div class=" item ">
+       <a href="#">
+         <div class="item-backdrop3d backdrop1">
+         <div class="fig-cap">
+           <img alt="Warm Winter Landscape" src="/img/WarmWinterLandscape.png"/>
+           <div class="item-cap">
+             <p class="item-title">Warm Winter Landscape<p>
+             <p class="item-company"> Fall 2017</p>
+           </div>
+         </div>
+       </div>
+       </a>
+     </div>
+
+      <!--- Ruins Model Concept 2 --->
+     <div class=" item ">
+       <a href="#">
+         <div class="item-backdrop3d backdrop1">
+         <div class="fig-cap">
+           <img alt="Ruins Model Concept 2" src="/img/RunisModelConcept2.png"/>
+           <div class="item-cap">
+             <p class="item-title">Ruins Model 2<p>
+             <p class="item-company"> Fall 2017</p>
+           </div>
+         </div>
+       </div>
+       </a>
+     </div>
+
+      <!--- Ruins Model Concept 1 --->
+     <div class=" item ">
+       <a href="#">
+         <div class="item-backdrop3d backdrop1">
+         <div class="fig-cap">
+           <img alt="Ruins Model Concept 1" src="/img/RuinsModelConcept1.png"/>
+           <div class="item-cap">
+             <p class="item-title">Ruins Model 1<p>
+             <p class="item-company"> Fall 2017</p>
+           </div>
+         </div>
+       </div>
+       </a>
+     </div>
+
+     <!--- Hall concept --->
+    <div class=" item ">
+      <a href="#">
+        <div class="item-backdrop3d backdrop1">
+        <div class="fig-cap">
+          <img alt="pic" src="/img/Spinner-2.png"/>
+          <div class="item-cap">
+            <p class="item-title">Books and Spinner<p>
+            <p class="item-company"> Fall 2017</p>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+
+       <!--- Fur Balls --->
       <div class="item ">
         <a href="#">
-          <div class="item-backdrop3d backdrop2">
+          <div class="item-backdrop3d backdrop1">
           <div class="fig-cap">
-            <img alt="pic" src="https://images.unsplash.com/photo-1529119835860-ce3d90485424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70c8c47a81a255b70b4d0ca354451faa&auto=format&fit=crop&w=2100&q=80"/>
+            <img alt="furballs" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/24fef452603943.5915c95a033bc.png"/>
             <div class="item-cap">
-              <p class="item-title">Image Name<p>
-              <p class="item-company"> MM/DD/YYYY</p>
+              <p class="item-title">Fur Balls<p>
+              <p class="item-company"> 05/12/2017</p>
             </div>
           </div>
         </div>
         </a>
       </div>
-       <!--- 3d work 2 --->
+       <!--- Alternative Earth --->
       <div class="item">
         <a href="#">
-          <div class="item-backdrop3d backdrop3-3d">
+          <div class="item-backdrop3d backdrop1">
           <div class="fig-cap">
-            <img alt="pic" src="https://images.unsplash.com/photo-1529119835860-ce3d90485424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70c8c47a81a255b70b4d0ca354451faa&auto=format&fit=crop&w=2100&q=80"/>
+            <img alt="Alternative Earth" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/34af9352604231.5915ca5a77718.png"/>
             <div class="item-cap">
-              <p class="item-title">Image Name<p>
-              <p class="item-company"> MM/DD/YYYY</p>
+              <p class="item-title">Alternative Earth<p>
+              <p class="item-company"> 05/12/2017</p>
             </div>
           </div>
         </div>
         </a>
       </div>
-       <!--- 3d work 3 --->
-      <div class=" item ">
-        <a href="#">
-          <div class="item-backdrop3d backdrop4">
-          <div class="fig-cap">
-            <img alt="pic" src="https://images.unsplash.com/photo-1529119835860-ce3d90485424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70c8c47a81a255b70b4d0ca354451faa&auto=format&fit=crop&w=2100&q=80"/>
-            <div class="item-cap">
-              <p class="item-title">Image Name<p>
-              <p class="item-company"> MM/DD/YYYY</p>
-            </div>
-          </div>
-        </div>
-        </a>
-      </div>
+
+
 
     </div>
     <!---End of 3D Work Section --->
@@ -215,13 +267,13 @@
     <div class="item-section">
        <!--- Project 1 --->
       <div class="item ">
-        <a href="#">
-          <div class="item-backdrop3d backdrop3-3d">
+        <a href="https://bcuzapparel.com/">
+          <div class="item-backdrop3d backdrop1">
           <div class="fig-cap">
-            <img alt="pic" src="https://images.unsplash.com/photo-1529119835860-ce3d90485424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70c8c47a81a255b70b4d0ca354451faa&auto=format&fit=crop&w=2100&q=80"/>
+            <img alt="pic" src="/img/branding/bcuz-comingsoon-screenshot.png"/>
             <div class="item-cap">
-              <p class="item-title">Project Title<p>
-              <p class="item-company"> MM/DD/YYYY</p>
+              <p class="item-title">BCuZ' Apparel<p>
+              <p class="item-company"> A Clothing Line</p>
             </div>
           </div>
         </div>
@@ -229,32 +281,19 @@
       </div>
        <!--- Project 2 --->
       <div class="item">
-        <a href="#">
+        <a href="https://hackaday.io/project/21098-the-ultimate-cosplayers-gauntlet">
           <div class="item-backdrop3d backdrop1">
           <div class="fig-cap">
-            <img alt="pic" src="https://images.unsplash.com/photo-1529119835860-ce3d90485424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70c8c47a81a255b70b4d0ca354451faa&auto=format&fit=crop&w=2100&q=80"/>
+            <img alt="pic" src="https://cdn.hackaday.io/images/8129721491873028257.JPG"/>
             <div class="item-cap">
-              <p class="item-title">Project Title<p>
-              <p class="item-company"> MM/DD/YYYY</p>
+              <p class="item-title">Ultimate Cosplayer's Gauntlet<p>
+              <p class="item-company"> An Arduino Project</p>
             </div>
           </div>
         </div>
         </a>
       </div>
-       <!--- Project 3 --->
-      <div class=" item ">
-        <a href="#">
-          <div class="item-backdrop3d backdrop1-3d">
-          <div class="fig-cap">
-            <img alt="pic" src="https://images.unsplash.com/photo-1529119835860-ce3d90485424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70c8c47a81a255b70b4d0ca354451faa&auto=format&fit=crop&w=2100&q=80"/>
-            <div class="item-cap">
-              <p class="item-title">Project Title<p>
-              <p class="item-company"> MM/DD/YYYY</p>
-            </div>
-          </div>
-        </div>
-        </a>
-      </div>
+
 
     </div>
     <!---End of 3D Work Section --->
@@ -273,8 +312,8 @@
 
       <p>In my spare time I&apos;m a gadget maker, painter, photographer, and game developer. </p>
 
-      <p>When I&apos;m notworking I like to keep busy working on projects that challenge my skills a
-designer,engineer and artist.</p>
+      <p>When I&apos;m not working I like to keep busy working on projects that challenge my skills a
+designer, engineer, and artist.</p>
 
         <p>For more professional information about me please visit my <a href=#> Linkedin </a> profile or refer to my <a href="#"> Cv/Resume </a> . </p>
       </div>

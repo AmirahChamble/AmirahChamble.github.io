@@ -91,7 +91,7 @@ nav{
   flex-wrap: nowrap;
   padding: @smallGap;
   margin-right: @smallGap;
-  align-text: left;
+  text-align: left;
   position: fixed;
   clear: both;
 }
@@ -118,6 +118,8 @@ nav{
 
 
 
+
+
 #home-link{
   width: 100%;
   text-align: left;
@@ -126,6 +128,12 @@ nav{
   color: @main-color;
   border: none;
   margin-bottom: @largeGap;
+  -webkit-transition: 1s ease-in-out;
+}
+
+#home-link:hover{
+  color: @fountain-blue;
+  -webkit-transition: 1s ease-in-out;
 }
 
 .nav-social-links{
@@ -147,30 +155,37 @@ nav{
 }
 
 .social-nav-links-icons a {
+  color: @main-color;
   padding: 0px @tinyGap 0px @tinyGap;
   -webkit-transition: 1s ease-in-out;
 }
 
 .social-nav-links-icons a:hover {
-  color: @main-color;
+  color: @fountain-blue;
   -webkit-transition: 1s ease-in-out;
 }
+
+
 
 /***********************************
 Main Content CSS
 ************************************/
 .main-section{
   width: 100%;
-  margin-top: @largeGap;
   margin-left: 300px;
-  margin-right: @smallGap;
+  margin-right: 0px;
   margin-bottom: @largeGap;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
+.margin-top{
+  margin-top: @largeGap;
 
+}
 /**** Tagline Section ****/
+
+
 
 .tagline{
   margin-top: @largeGap*4;
@@ -185,7 +200,7 @@ Main Content CSS
 }
 
 .tagline h2{
-  margin-top: @largeGap;
+  margin-top: @largeGap*4;
   font-size: @title;
   margin-bottom: @smallGap;
 }
@@ -193,6 +208,23 @@ Main Content CSS
 .tagline p {
   font-size: @body;
 }
+
+.main-section {
+  width: 100%;
+  text-align: left;
+  font-size: @title;
+  margin-bottom: @largeGap;
+}
+
+.coming{
+  margin-top: @mediumGap;
+  margin-bottom: @largeGap;
+  padding-left: @smallGap;
+  font-family: @serif;
+  color: @fountain-blue;
+
+}
+
 
 /***** Works Section******/
 
@@ -205,10 +237,11 @@ Main Content CSS
 }
 .section-header h1{
   font-size: @title;
-  width: 90px;
+  width: 100px;
   padding-bottom:4px;
   border-bottom: 3px solid @main-color;
 }
+
 .section-header p{
   margin-top:@smallGap;
   font-size: @paragraph;
@@ -224,12 +257,12 @@ Main Content CSS
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .item{
   margin: @largeGap;
-  margin-right: @largeGap*2;
+  margin-right: @mediumGap;
 }
 
 .item2{
@@ -238,16 +271,15 @@ Main Content CSS
 
 .item-backdrop{
   width: 300px;
-  height: 360px;
 }
 
 .fig-cap{
     transform: translate(-50px, 40px);
+    padding-bottom: @largeGap;
 }
 
 img{
   width: 300px;
-  height: 200px ;
   background-size: cover;
   background-repeat: norepeat;
   box-shadow: 10px 10px 0px ;
@@ -268,25 +300,31 @@ img{
 }
 /*** Backdrops *****/
 .backdrop1{
-  background: @fountain-blue;
-  color: @sandwisp;
+  border: 2px solid @black;
+  color: @black;
+}
+.backdrop1 img{
+  border: 2px solid @black;
+}
+.backdrop2{
+  border: 2px solid @black;
+  background-color: @black;
+  color: @white;
 }
 .backdrop1-3d{
   border: 2px solid @fountain-blue;
   color: @fountain-blue;
 }
-.backdrop2{
-  background: @dairy-creme;
-  color: @white;
-}
+
 
 .backdrop3{
   background: @dairy-creme;
   color: @cerise;
 }
 .backdrop3-3d{
-  border: 2px solid @cerise;
-  color: @cerise;
+  border: 2px solid @govenor-bay;
+  color: @govenor-bay;
+  padding-bottom: @smallGap;
 }
 .backdrop4{
   background: @sandwisp;
@@ -305,7 +343,10 @@ img{
   border: 2px solid @fountain-blue;
   color: @fountain-blue;
 }
-
+.backdrop-1{
+  border: 2px solid @black;
+  color: @black;
+}
 /**********************
     Items Section [3D Work]
 ***********************/
@@ -315,20 +356,14 @@ img{
 
 .item-backdrop3d{
   width: 330px;
-  height: 360px;
 }
 
 .fig-cap3d{
     transform: translate(80px, 40px);
+    padding-bottom: @largeGap;
 }
 
-img{
-  width: 300px;
-  height: 200px ;
-  background-size: cover;
-  background-repeat: norepeat;
-  box-shadow: 10px 10px 0px ;
-}
+
 
 .fig-cap3d .item-cap{
   transform: translate(-50px);
@@ -343,6 +378,7 @@ img{
 .item-company{
   font-size: @body;
 }
+
 
 /************************
       About Section
