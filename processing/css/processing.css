@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Pacifico');
+
+
+*{
+  margin: 0px;
+}
+
+html{
+  background: #151B33;
+}
+
+body{
+  position: relative;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#canvas{
+  position: absolute;
+  z-index: -4;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.title{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ .title h1{
+  font-size: 46pt;
+}
+
+.title h3{
+  width: 100%;
+  text-align: right;
+}
+
+.return-link{
+  position: absolute;
+  top: 26px;
+  left: 26px;
+}
+.return-link span{
+  padding-right: 12px;
+}
+
+.footer-description{
+  position: absolute;
+  bottom: 26px;
+}
