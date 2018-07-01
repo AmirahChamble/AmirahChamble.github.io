@@ -5,7 +5,7 @@ window.onload = function() {
     selector : ".particles-js",
     color: ["#f3f6b4", "#57b9c6", "#3c34d2", "#fdf3bf", "#fbddc5" , "#d523c6"],
     connectParticles : false,
-    sizeVariations: 10 ,
+    sizeVariations: 5 ,
     maxParticles : 150,
     speed: .5,
     hover: "bubble",
