@@ -3,9 +3,9 @@
 window.onload = function() {
    Particles.init({
     selector : ".particles-js",
-    color: ["#f3f6b4", "#57b9c6", "#3c34d2", "#fdf3bf", "#fbddc5" , "#d523c6"],
+    color: ["#a4f7f0"],
     connectParticles : false,
-    sizeVariations: 5 ,
+    sizeVariations: 10 ,
     maxParticles : 150,
     speed: .5,
     hover: "bubble",
