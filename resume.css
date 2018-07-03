@@ -1,0 +1,105 @@
+nav{
+  padding-left: 24px;
+}
+.margin-top{
+  margin-top: 40px;
+}
+.education-info{
+    margin-bottom: 12px;
+}
+.education-info h1{
+    font-size: 18pt;
+    width: 100px;
+    border-bottom:3px solid #d523c6;
+    margin-bottom: 24px;
+}
+.education-info p {
+  text-decoration: none;
+  margin-top : 12px;
+  font-size: 12pt;
+}
+
+.my-education{
+    font-size: 12pt;
+    color: #292e31;
+}
+.my-education p{
+    margin-bottom: 6px;
+}
+.my-education h3{
+    font-size: 14pt;
+    margin-top: 26px;
+    margin-bottom: 12px;
+    color : #57b9c6;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom:2px solid #57b9c6;
+}
+.education-cred{
+    padding-top: 12px;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.main-content{
+    padding: 50px;
+    padding-right: 150px;
+}
+
+.job-container{
+    margin-top: 26px;
+    margin-bottom: 26px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap : nowrap;
+    border-left: 2px solid #d523c6;
+
+}
+
+ .job-title{
+  font-size: 20pt;
+  color : #57b9c6;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom:2px solid #57b9c6;
+
+}
+.job-info{
+    margin-top: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 12pt;
+}
+
+.job-desc{
+  font-size: 14pt;
+  line-height: 24px;
+}
+
+.top-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.download{
+  font-size: 14pt;
+  padding: 12px;
+  background: #d523c6;
+  border: 3px solid #d523c6;
+  color: #ffffff;
+  -webkit-transition: 1s ease-in-out;
+}
+.download:hover{
+  border: 3px solid #57b9c6;
+  background: #57b9c6;
+  color: #ffffff;
+  -webkit-transition: 1s ease-in-out;
+}
