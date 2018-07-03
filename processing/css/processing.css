@@ -18,6 +18,7 @@ a{
   text-decoration: none;
 }
 
+
 #canvas{
   position: absolute;
   z-index: -4;
@@ -50,7 +51,9 @@ a{
  .title h1{
   font-size: 46pt;
 }
-
+ ruby > rt{
+  font-size: 14pt;
+}
 .title h3{
   width: 100%;
   text-align: right;
