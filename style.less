@@ -6,13 +6,14 @@ font-family: 'Libre Franklin', sans-serif;
 
 *{
   margin: 0px;
+  font-family: @sans-serif;
 }
 /******* CSS Variables****
 *************************/
 /**** Colors ***/
-@background : #fff;
+@background : #0f0f0f;
 @black : #292e31;
-@white: #fff;
+@white: #ffffff;
 @title-color : #0b12e1;
 @main-color: #d523c6;
 
@@ -22,397 +23,173 @@ font-family: 'Libre Franklin', sans-serif;
 @beeswax : #fdf3bf;
 @dairy-creme: #fbddc5;
 @cerise: #d523c6;
+@degrees: 90deg;
+@linearGradient: linear-gradient(@degrees, @sandwisp , @cerise);
 /** Spacing***/
 @tinyGap : 6px;
 @smallGap : 12px;
-@mediumGap: 26px;
+@mediumGap: 25px;
 @largeGap: 50px;
 
 /**** Font families and sizing ****/
-@sans-serif : 'Libre Franklin', sans-serif;
+@sans-serif : 'Open sans', sans-serif;
 @serif : 'Pacifico', cursive;
 
 @caption: 8pt;
 @paragraph: 12pt;
-@body :  14pt;
+@body :  1em;
 @title:  20pt;
 @header:  28pt;
 @page-title: 30pt;
 @gigantic-title: 40pt;
 
-
-/*******General*******
-*********************/
+/**** Main CSS below line ***/
 a{
-  color: @black;
   text-decoration: none;
+  color: @white;
 }
-
-html{
-  font-family: @sans-serif;
-  height: 100vh;
-  width: 100vw;
-  background-color: @background;
+p{
+  font-size: @body;
 }
 body{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow: auto;
-
-}
-
-footer{}
-/********************
-    Canvas
-*********************/
-.canvas-container{
+  background: @background;
+  color: @white;
   width: 100vw;
-  height: 100vh;
-  position: fixed;
-
-  z-index: -1;
-}
-.particles-js{
-  width: 100%;
-  height: 100%;
-  display: block;
+  position: relative;
 }
 
-/*******Nav*******
-*********************/
-nav{
-  width: 15vw;
-  min-width: 200px;
-  height: 100%;
-  /*border-right: 1px solid coral;*/
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: @smallGap;
-  margin-right: @smallGap;
-  text-align: left;
-  position: fixed;
-  clear: both;
+ nav{
+   margin-top: @mediumGap;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+nav a{
+  padding: 0px @mediumGap;
 }
 
-.nav-page-links {
-  padding-top: @largeGap;
-  display: flex;
-  flex-direction: column;
-  flex-wrap : nowrap;
-  justify-content: flex-start;
+/*** Outline Wrapper and Container styles ***/
+
+.wrapper{
+  margin: @largeGap 100px;
+  padding: 2px;
+  background: @linearGradient;
 }
 
-.nav-page-links a {
-  margin-bottom: @mediumGap;
-  padding-left: @smallGap;
-  border-left: 2px solid  @main-color;
-  -webkit-transition: 1s ease-in-out;
-}
-
-.nav-page-links a:hover{
-  border-left: @largeGap solid  @main-color;
-  -webkit-transition: 1s ease-in-out;
-}
-
-
-
-
-
-#home-link{
-  width: 100%;
-  text-align: left;
-  font-family: @serif;
-  font-size: @title;
-  color: @main-color;
-  border: none;
-  margin-bottom: @largeGap;
-  -webkit-transition: 1s ease-in-out;
-}
-
-#home-link:hover{
-  color: @fountain-blue;
-  -webkit-transition: 1s ease-in-out;
-}
-
-.nav-social-links{
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: @largeGap;
+.container{
+  background: @background;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.logoWrapper{
+  margin: @largeGap 0px;
+  padding: 2px;
+  background: @linearGradient;
+}
+
+.logoContainer{
+  background: @background;
+}
+.logoContainer p{
+  font-size: 3em;
+  padding: 12px 24px;
+}
+
+/** Text block styles **/
+
+.heroText{
+  margin-bottom: @largeGap;
+  width: 70%;
   text-align: center;
-  font-size: @body;
+}
+.heroText p{
+  margin-bottom: @mediumGap;
+}
+.heroText p b {
+  font-size: 18px;
+  color: @white;
 }
 
-.nav-social-links p{
-  font-size: @caption;
-  margin-bottom: @smallGap;
-}
+/*** Outline Gradient Button Styles ***/
 
-.social-nav-links-icons a {
-  color: @main-color;
-  padding: 0px @tinyGap 0px @tinyGap;
-  -webkit-transition: 1s ease-in-out;
-}
-
-.social-nav-links-icons a:hover {
-  color: @fountain-blue;
-  -webkit-transition: 1s ease-in-out;
-}
-/***********************************
-Nav CV/Resume Link
-***********************************/
-#resume-link{
-  margin-top: @largeGap + @smallGap;
-  border-left: 2px solid  @govenor-bay;
-
-  -webkit-transition: 1s ease-in-out;
-}
-
-#resume-link:hover{
-  color: @govenor-bay;
-  border-left: @largeGap solid  @fountain-blue;
-
-  -webkit-transition: 1s ease-in-out;
-}
-
-/***********************************
-Main Content CSS
-************************************/
-.main-section{
-  width: 100%;
-  margin-left: 300px;
-  margin-right: 0px;
-  margin-bottom: @largeGap;
+.outlineGradientButton{
+  background: @linearGradient;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-}
-.margin-top{
-  margin-top: @largeGap;
-
-}
-/**** Tagline Section ****/
-
-
-
-.tagline{
-  margin-top: @largeGap*4;
-  margin-bottom: @largeGap*2;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border-radius: 25px;
 }
 
-.tagline h1{
-  font-family: @serif;
-  font-size: @gigantic-title;
-  color: @main-color;
+.outlineGradientButton p{
+  padding: 6px 24px;
+  display: inline-block;
+  text-align: center;
+  background: @background;
+  border-radius: 25px;
 }
 
-.tagline h2{
-  margin-top: @largeGap*4;
-  font-size: @title;
-  margin-bottom: @smallGap;
+.outlineGradientButton:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(1.1);
 }
 
-.tagline p {
-  font-size: @body;
+.gradientButton{
+  background: @linearGradient;
+  border-radius: 25px;
+}
+.gradientButton p{
+  padding: 6px 24px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+}
+.gradientButton:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(1.1);
 }
 
-.main-section {
-  width: 100%;
-  text-align: left;
-  font-size: @title;
-  margin-bottom: @largeGap;
-}
+/** Footer Styles **/
 
-.coming{
-  margin-top: @mediumGap;
-  margin-bottom: @largeGap;
-  padding-left: @smallGap;
-  font-family: @serif;
-  color: @fountain-blue;
-
-}
-
-
-/***** Works Section******/
-
-.section-header{
-  margin-top: @largeGap;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin-bottom: @largeGap;
-}
-.section-header h1{
-  font-size: @title;
-  width: 100px;
-  padding-bottom:4px;
-  border-bottom: 3px solid @main-color;
-}
-
-.section-header p{
-  margin-top:@smallGap;
-  font-size: @paragraph;
-  font-style: italic;
-}
-
-/**********************
-    Items Section [Case Study]
-***********************/
-
-.item-section{
+footer{
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+footer p{
+  font-size: .85em;
+  margin: @smallGap;
+}
+
+/** Social Links Navbar Styles **/
+
+.socialLinks{
+  position: fixed;
+  left: 0px;
+  top: 30vh;
+
   align-items: center;
 }
 
-.item{
-  margin: @largeGap;
-  margin-right: @mediumGap;
+.sLinks{
+  width: 5px;
+  background: @linearGradient;
 }
-
-.item2{
-  margin-top:@largeGap*2;
+.sLinks i {
+  font-size: 1.3em;
+  padding: @smallGap;
 }
-
-.item-backdrop{
-  width: 300px;
-}
-
-.fig-cap{
-    transform: translate(-50px, 40px);
-    padding-bottom: @largeGap;
-}
-
-img{
-  width: 300px;
-  background-size: cover;
-  background-repeat: norepeat;
-  box-shadow: 10px 10px 0px ;
-}
-
-.item-cap{
-  transform: translate(50px);
-  padding-top: @mediumGap;
-  padding-left: @smallGap;
-}
-
-.item-title{
-  font-size: @title;
-}
-
-.item-company{
-  font-size: @body;
-}
-/*** Backdrops *****/
-.backdrop1{
-  border: 2px solid @black;
-  color: @black;
-}
-.backdrop1 img{
-  border: 2px solid @black;
-}
-.backdrop2{
-  border: 2px solid @black;
-  background-color: @black;
-  color: @white;
-}
-.backdrop1-3d{
-  border: 2px solid @fountain-blue;
-  color: @fountain-blue;
-}
-
-
-.backdrop3{
-  background: @dairy-creme;
-  color: @cerise;
-}
-.backdrop3-3d{
-  border: 2px solid @govenor-bay;
-  color: @govenor-bay;
-  padding-bottom: @smallGap;
-}
-.backdrop4{
-  background: @sandwisp;
-  color: @fountain-blue;
-}
-.backdrop4-3d{
-  background: @fountain-blue;
-  color: @white;
-}
-.backdrop5{
-  background: @fountain-blue;
-  color: @dairy-creme;
-}
-
-.backdrop5-3d{
-  border: 2px solid @fountain-blue;
-  color: @fountain-blue;
-}
-.backdrop-1{
-  border: 2px solid @black;
-  color: @black;
-}
-/**********************
-    Items Section [3D Work]
-***********************/
-.item3d{
-  margin:  0px @largeGap @largeGap 0px;
-}
-
-.item-backdrop3d{
-  width: 330px;
-}
-
-.fig-cap3d{
-    transform: translate(80px, 40px);
-    padding-bottom: @largeGap;
-}
-
-
-
-.fig-cap3d .item-cap{
-  transform: translate(-50px);
-  padding-top: @mediumGap;
-  padding-left: @smallGap;
-}
-
-.item-title{
-  font-size: @title;
-}
-
-.item-company{
-  font-size: @body;
-}
-
-
-/************************
-      About Section
-**********************/
-
-.about-text{
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.about-text p{
-  margin-bottom: @mediumGap;
-   padding-left: @mediumGap;
-  line-height: 24px;
-  font-size: @paragraph;
-}
-
-.about-text p a {
-  color: @main-color;
+.sLinks:hover{
+  transition: all .5s ease-in-out;
+  width: 50px;
+  background: @linearGradient;
 }
