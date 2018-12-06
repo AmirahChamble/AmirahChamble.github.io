@@ -17,13 +17,13 @@ font-family: 'Libre Franklin', sans-serif;
 @title-color : #0b12e1;
 @main-color: #d523c6;
 
-@sandwisp: #f3f6b4;
+@sandwisp: #0018AB; //#f3f6b4;
 @fountain-blue: #57b9c6;
 @govenor-bay: #3c34d2;
 @beeswax : #fdf3bf;
 @dairy-creme: #fbddc5;
-@cerise: #d523c6;
-@degrees: 90deg;
+@cerise: #9933CC; //#d523c6;
+@degrees: 135deg;
 @linearGradient: linear-gradient(@degrees, @sandwisp , @cerise);
 /** Spacing***/
 @tinyGap : 6px;
@@ -110,10 +110,16 @@ nav a{
 }
 .heroText p{
   margin-bottom: @mediumGap;
+  line-height: 2.5;
 }
-.heroText p b {
+.heroText p span {
   font-size: 18px;
-  color: @white;
+  border-bottom: 2px solid @cerise;
+  padding: 4px 6px;
+}
+.heroText p span:hover{
+  background: @cerise;
+  transition: all .3s ease-in-out;
 }
 
 /*** Outline Gradient Button Styles ***/
@@ -181,8 +187,13 @@ footer p{
 }
 
 .sLinks{
-  width: 5px;
-  background: @linearGradient;
+  width: 0px;
+}
+.primary{
+  background: linear-gradient(0deg, @sandwisp, @cerise);
+}
+.secondary{
+  background: linear-gradient(0deg, @cerise, @sandwisp);
 }
 .sLinks i {
   font-size: 1.3em;
@@ -191,5 +202,4 @@ footer p{
 .sLinks:hover{
   transition: all .5s ease-in-out;
   width: 50px;
-  background: @linearGradient;
 }
