@@ -37,7 +37,7 @@ font-family: 'Libre Franklin', sans-serif;
 
 @caption: 8pt;
 @paragraph: 12pt;
-@body :  1em;
+@body :  1.25em;
 @title:  20pt;
 @header:  28pt;
 @page-title: 30pt;
@@ -111,9 +111,12 @@ nav a{
 .heroText p{
   margin-bottom: @mediumGap;
   line-height: 2.5;
+  font-size: @body;
+  letter-spacing: .5px;
+}
+.heroText p b {
 }
 .heroText p span {
-  font-size: 18px;
   border-bottom: 2px solid @cerise;
   padding: 4px 6px;
 }
@@ -161,6 +164,53 @@ nav a{
   transition: all .5s ease-in-out;
   transform: scale(1.1);
 }
+
+/** Styles related to Tabs **/
+.tabs{
+  position: relative;
+  z-index: 2;
+  margin-top: 25px;
+  align-self: center;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabWrapper{
+  background: @linearGradient;
+  padding: 2px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tabContainer{
+  background: @background;
+  padding: 12px 24px;
+  transition: 1s ease-out;
+}
+.tabWrapper:hover .tabContainer{
+  background: @linearGradient;
+  transition: all 1.5s ease-in;
+}
+.tabWrapper:hover .ball{
+  top: -20px;
+  transition: 1s ease-in-out;
+}
+.ball{
+  position: absolute;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  top: -75px;
+  background : @linearGradient;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+}
+
 
 /** Footer Styles **/
 
