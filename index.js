@@ -15,12 +15,19 @@ function removeActiveClass(){
 
 
 function openTab(tab, tabContent){
-  //hide all elements with the class="tabContent"
-  hideTabs();
-  //remove active class from all class="tabLinks"
-  removeActiveClass();
-  //show current tab content section and add the active status to its tab
-  document.getElementById(tabContent).style.display = "flex";
-  document.getElementById(tab).classList.add("active");
 
+  //if tab is already active, hide it and remove active class
+  var thisTab = document.getElementById(tab);
+  if( thisTab.classList.contains("active")){
+      thisTab.classList.remove("active");
+      document.getElementById(tabContent).style.display = "none";
+  }else{
+    //hide all elements with the class="tabContent"
+    hideTabs();
+    //remove active class from all class="tabLinks"
+    removeActiveClass();
+    //show current tab content section and add the active status to its tab
+    document.getElementById(tabContent).style.display = "flex";
+    document.getElementById(tab).classList.add("active");
+  }
 }
