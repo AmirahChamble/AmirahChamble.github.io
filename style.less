@@ -210,16 +210,20 @@ nav a{
   border-radius: 50%;
   transition: .5s ease-in-out;
 }
-.active{}
+.active .ball{
+  top: 80px;
+  transition: 1s ease-in-out;
+}
 
 /** Tab Content Styles**/
 .Contentwrapper{
-  margin: @largeGap 100px;
+  margin: 100px 100px;
   padding: 2px;
   background: @linearGradient;
 }
 
 .Contentcontainer{
+  width: 100%;
   background: @background;
   display: flex;
   flex-direction: column;
