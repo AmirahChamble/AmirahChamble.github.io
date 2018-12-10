@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ARC | Amirah Chamble </title>
+    <title>About | Amirah Chamble </title>
     <meta charset="utf-8" />
 
     <link rel="shortcut icon" type="image/png" href="bluebird-favicon.png"/>
@@ -12,8 +12,9 @@
     <!-- My P5JS Script file -->
     <!-- For Less CSS CDN  and my Stylesheet-->
     <link rel="stylesheet/less" type="text/css" href="style.less?ts=<?=filemtime('style.css')?>" />
+    <link rel="stylesheet/less" type="text/css" href="about.less?ts=<?=filemtime('style.css')?>" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
-  <!--- JQuery CDN -->
+    <!--- JQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- My Javascript Files -->
     <script src="particlejs.js"></script>
@@ -23,21 +24,15 @@
   <body onload="hideTabs()">
 
     <nav>
-      <a href="/about.html" >
+      <a href="/index.html" >
          <div class="outlineGradientButton">
-           <p> About </p>
+           <p> Home </p>
          </div>
        </a>
-
-      <a href="/files/Chamble_Amirah_Resume_2018.doc.pdf" >
-        <div class="gradientButton">
-          <p> Download Resume </p>
-        </div>
-      </a>
     </nav>
 
     <div class="wrapper">
-      <div class="container">
+      <div class="aboutContainer">
       <!-- main container  -->
         <div class="logoWrapper">
           <div class="logoContainer">
@@ -45,66 +40,51 @@
           </div>
         </div>
 
-        <div class="heroText">
-          <p> Hi . I'm <span>Amirah</span>, a technical artist passionate about creating awesome experiences . I'm currently a <span> UX Designer</span> & Design System <span>Engineer</span> based in <span> Washington, D.C . </span> </p>
-          <p>Here's some stuff I've been working on .</p>
+        <div class="aboutSection">
+          <div class="aboutImg">
+            <img src="/img/me.jpg" alt=" a picture of me"/>
+          </div>
+          <div class="aboutInfo">
+
+            <div class="aboutContent">
+              <p> I'm currently a UX Designer and Design System Engineer working at Bloomberg BNA, in Crystal City, Virginia . Lately, most of my work is focused on Bloomberg's Design System, Fish Tank . In my free time I make weird inventions using arduino and make short 3D animations . </p>
+              <p>P.S . Feel free to get in contact with me through email .</p>
+              <div class="aboutLinks">
+                <div>
+                  <a href="https://twitter.com/achamble">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amirah-chamble-211769115/">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.behance.net/amirahcham77c4">
+                      <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="https://codepen.io/AmirahChamble/">
+                      <i class="fab fa-codepen"></i>
+                    </a>
+                    <a href="https://github.com/AmirahChamble">
+                      <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <a href="/files/Chamble_Amirah_Resume_2018.doc.pdf" class="AboutgradientButton">
+                  <div >
+                    <p> Resume </p>
+                  </div>
+                </a>
+
+
+
+
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="tabs">
-
-          <div class="tabWrapper " id="caseStudyTab" onclick="openTab('caseStudyTab', 'caseStudy')">
-            <div class="ball"></div>
-            <div class="tabContainer">
-              <p> Case Studies </p>
-            </div>
-          </div>
-
-          <div class="tabWrapper " id="artTab" onclick="openTab('artTab', 'art')">
-            <div class="ball"></div>
-            <div class="tabContainer">
-              <p> Art </p>
-            </div>
-          </div>
-
-          <div class="tabWrapper " id="codeTab" onclick="openTab('codeTab', 'code')">
-            <div class="ball"></div>
-            <div class="tabContainer">
-              <p> Code </p>
-            </div>
-          </div>
-
-          <div class="tabWrapper " id="projectTab" onclick="openTab('projectTab', 'project')">
-            <div class="ball"></div>
-            <div class="tabContainer">
-              <p> Projects </p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </div>
 
-    <div class="Contentwrapper" id="caseStudy">
-      <div class="Contentcontainer">
-        <h1>CaseStudy</h1>
-      </div>
-    </div>
-    <div class="Contentwrapper" id="art">
-      <div class="Contentcontainer">
-        <h1> Art </h1>
-      </div>
-    </div>
-    <div class="Contentwrapper" id="code">
-      <div class="Contentcontainer">
-        <h1> Code </h1>
-      </div>
-    </div>
-    <div class="Contentwrapper" id="project">
-      <div class="Contentcontainer">
-        <h1> Project </h1>
-      </div>
-    </div>
 
     <footer>
       <p> Powered by <b> Amirah Chamble </b> </p>

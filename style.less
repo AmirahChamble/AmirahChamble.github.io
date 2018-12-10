@@ -145,12 +145,14 @@ nav a{
   border-radius: 25px;
 }
 
-.outlineGradientButton:hover{
+.outlineGradientButton:hover p{
+  background: @linearGradient;
   transition: all .5s ease-in-out;
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 
 .gradientButton{
+  padding: 2px;
   background: @linearGradient;
   border-radius: 25px;
 }
@@ -158,11 +160,13 @@ nav a{
   padding: 6px 24px;
   display: inline-block;
   text-align: center;
+  background: @linearGradient;
   border-radius: 25px;
 }
-.gradientButton:hover{
+.gradientButton:hover p{
   transition: all .5s ease-in-out;
-  transform: scale(1.1);
+  background: @background;
+  //transform: scale(1.1);
 }
 
 /** Styles related to Tabs **/
@@ -220,7 +224,7 @@ nav a{
   margin: 100px 100px;
   padding: 2px;
   background: @linearGradient;
-  transition: all 1s ease-in-out;
+  transition: display 1s ease-in-out;
 }
 
 .Contentcontainer{

@@ -1,3 +1,6 @@
+/* *** Everything below this line
+       Controls the Tab Functionality *** */
+       
 function hideTabs(){
   var tabContent = document.getElementsByClassName("Contentwrapper");
   //hide all blocks wth this class name

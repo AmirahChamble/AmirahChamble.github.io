@@ -1,0 +1,105 @@
+@background : #0f0f0f;
+@black : #292e31;
+@white: #ffffff;
+@title-color : #0b12e1;
+@main-color: #d523c6;
+
+@sandwisp: #0018AB; //#f3f6b4;
+@fountain-blue: #57b9c6;
+@govenor-bay: #3c34d2;
+@beeswax : #fdf3bf;
+@dairy-creme: #fbddc5;
+@cerise: #9933CC; //#d523c6;
+@degrees: 135deg;
+@linearGradient: linear-gradient(@degrees, @sandwisp , @cerise);
+/** Spacing***/
+@tinyGap : 6px;
+@smallGap : 12px;
+@mediumGap: 25px;
+@largeGap: 50px;
+
+
+.aboutContainer{
+  background: @background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.aboutSection{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutImg{
+  width: 40%;
+  background: @linearGradient;
+  padding: 2px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutInfo{
+  width: 40%;
+  background: @linearGradient;
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+  padding: 4px 0px 0px 0px;
+}
+.aboutContent{
+  height: 100%;
+  background: @background;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.aboutContent p {
+  //font-size: 1em;
+  margin-bottom: 25px;
+}
+.aboutContent i {
+  font-size: 1.5em;
+}
+.aboutLinks{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutLinks a{
+  margin-right:12px;
+}
+.AboutgradientButton{
+  padding: 2px;
+  background: @linearGradient;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 1s ease-in-out;
+}
+.AboutgradientButton div {
+  background: @background;
+  border-radius: 20px;
+}
+.AboutgradientButton p {
+  padding: 6px;
+  margin: 0px 12px;
+}
+.AboutgradientButton:hover div{
+  background: @linearGradient;
+  transition: all 1s ease-in-out;
+}
