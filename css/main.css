@@ -7,9 +7,15 @@
 h1{
   font-size: 2.4em;
   letter-spacing: 1px;
-  margn-top: 12px;
+  margin-top: 12px;
   margin-bottom: 12px;
   transform: rotate(5deg);
+}
+h2{
+  font-size: 2.4em;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 p{
