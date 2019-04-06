@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*
+family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+*/
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  font-size: 6rem;
+  line-height: 3.5rem;
+  letter-spacing : -0.04rem;
+}
+
+h2{
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  text-align: center;
+}
+
+h3{
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  text-align: center;
+}
+
+p{ 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.000625rem;
+  font-weight: 400;
+}
+
+.semi{
+  font-weight: 600;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.regular{
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+  color: var(--link);
+}
+
+.highlight-primary{
+  background-color: var(--primary);
+  color: var(--white);
+  padding-left:6px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+  padding-top: 0px;
+}
+.highlight-primary:hover{
+  background-color: var(--link);
+}
+

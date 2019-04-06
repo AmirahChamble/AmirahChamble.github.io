@@ -1,0 +1,20 @@
+:root{
+    /* Your Chosen Theme Colors*/
+    --white-smoke: #F5F5F5;
+    --desaturated-cyan: #62929E;
+    --black-olive: #3F393B;
+    --coral-reef: #FF7070;
+    --pale-silver: #C8BBB4;
+    --background-gradient : radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+    
+    /*Theme set up with your assigned variables*/
+    --background: var(--background-gradient);
+    --background-fade: rgba(250,250,250, 0.6);
+    --black: var(--olive-black);
+    --link: var(--desaturated-cyan);
+    --primary: var(--coral-reef);
+    --secondary : var(--pale-silver);
+    --white: #FFFFFF;
+    --gray: #C5CACD; 
+}
