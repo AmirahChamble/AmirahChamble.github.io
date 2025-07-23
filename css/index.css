@@ -1,8 +1,11 @@
 :root {
   --off-white: #f4f4f4;
   --off-black: #1c1c1c;
+  --alt-text: #303030;
   --nav-height: 80px;
   --in-progress: #39738C;
+  --active: rgb(9, 94, 9);
+  --link: #2563eb;
 }
 
 * {
@@ -44,6 +47,10 @@ h1{font-size: 1.75rem;}
 h2{font-size: 1.25rem;}
 p{font-size: 1rem;}
 
+a, a strong, a i{
+  color: var(--link);
+  text-decoration: none;}
+
 section{
   display: flex;
   flex-direction: column;
@@ -51,6 +58,11 @@ section{
   border:solid 2px var(--off-black);
   margin: 24px;
   margin-top: 20vh;
+}
+section h3{
+  border:solid 2px var(--off-black);
+  padding: 4px;
+  color: var(--alt-text);
 }
 section ul{
   width: 100%;
@@ -74,6 +86,11 @@ section ul li p span{
 }
 .in-progress{
   background-color: var(--in-progress);
+  color: var(--off-white);
+  font-weight: bold;
+}
+.active{
+  background-color: var(--active);
   color: var(--off-white);
   font-weight: bold;
 }
